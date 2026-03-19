@@ -10,17 +10,18 @@ import App from './App';
 import Home from './Home';
 import SQL from './category/SQL.jsx';
 import SQLCheatsheat from './category/SQLCheatsheat.jsx';
+import ThemeProvider from './hooks/ThemeContext.js';
 
 let routes=createBrowserRouter([
   {
     path:"/",
     element: <App/>, children :[
       {index:true,element:<Home/>},
-      {path:"/sql",element:<SQL/>},
-      {path:"/sqlcheatsheet",element:<SQLCheatsheat/>},
+      {path:"sql",element:<SQL/>},
+      {path:"sqlcheatsheet",element:<SQLCheatsheat/>},
       {path:"*",element:<Navigate to="/" replace/>}
     ]
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={routes}/>);
+root.render(<ThemeProvider><RouterProvider router={routes}/></ThemeProvider>);

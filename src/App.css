@@ -1,17 +1,15 @@
-.footer {
-  position: relative;
-  top: 100;
-  background-color: #FFE3DA;
-  color: #5A2E22;
+.card {
+  transition: all 0.2s ease;
 }
 
-.devName {
-  text-decoration: none;
-  color: rgb(191, 73, 14);
-  font-size: 1.3rem;
-  font-weight: 650;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.devName:hover {
-  color: rgb(178, 7, 124);
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
 }

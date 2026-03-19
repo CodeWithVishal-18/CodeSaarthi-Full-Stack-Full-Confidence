@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from './hooks/ThemeContext'
 
 export default function Navbar() {
+    let { theme, setTheme } = useContext(ThemeContext)
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-secondary-subtle">
@@ -19,6 +21,13 @@ export default function Navbar() {
                                 <Link className="nav-link active" aria-current="page" to={"/sql"}>SQL</Link>
                             </li>
                         </ul>
+                        <span style={{ cursor: "pointer" }} onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className='me-5'>
+                            {theme === "dark" ? (
+                                <i className="bi bi-brightness-high text-warning fs-4"></i>
+                            ) : (
+                                <i className="bi bi-moon fs-4"></i>
+                            )}
+                        </span>
                     </div>
                 </div>
             </nav>
