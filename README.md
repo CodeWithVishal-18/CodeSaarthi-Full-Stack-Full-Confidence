@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# 🚀 CodeYatra – Learn Full Stack Java Step by Step
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge\&logo=react)
+![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-purple?style=for-the-badge\&logo=bootstrap)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?style=for-the-badge\&logo=javascript)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange?style=for-the-badge)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👋 About the Project
 
-### `npm start`
+Hey! 👋
+I built **CodeYatra** to make learning **Full Stack Java Development** simple and structured.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instead of jumping randomly between topics, this platform gives you a **clear path** — just follow step by step and grow 🚀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> 💡 Think of it like your personal roadmap + notes + cheatsheets in one place.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ What You Can Do Here
 
-### `npm run build`
+* 📚 Follow a **complete learning path**
+* 🧠 Learn concepts topic-wise (DDL, DML, DQL…)
+* ⚡ Revise quickly using **cheatsheets**
+* 📋 Copy SQL commands instantly
+* 🌙 Switch between **dark & light mode**
+* 🔄 Navigate topics with **Next / Previous flow**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧭 Learning Flow
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```id="flow123"
+HTML → CSS → JavaScript → React → SQL → Java → Spring Boot
+```
 
-### `npm run eject`
+👉 No confusion. No guesswork. Just follow the path.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 UI Highlights
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Clean & minimal design
+* Sidebar navigation like real learning platforms
+* Smooth transitions & interactions
+* Responsive layout
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Category       | Tech Used                 |
+| -------------- | ------------------------- |
+| Frontend       | React.js                  |
+| Styling        | Bootstrap 5 + CSS         |
+| Routing        | React Router DOM          |
+| State Handling | Context API               |
+| Hooks          | Custom Hooks (`useFetch`) |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash id="run123"
+git clone https://github.com/your-username/codeyatra.git
+cd codeyatra
+npm install
+npm start
+```
 
-### Analyzing the Bundle Size
+👉 Open: `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🔥 Why This Project Stands Out
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This is not just a UI project.
 
-### Advanced Configuration
+I focused on:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* ✅ Clean architecture
+* ✅ Reusable components
+* ✅ Scalable structure
+* ✅ Real-world learning experience
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🧠 What I Learned
 
-### `npm run build` fails to minify
+While building this, I improved my skills in:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* React component design
+* Context API (theme management)
+* Custom hooks
+* UI/UX thinking
+* Building scalable frontend structure
+
+---
+
+## 🚀 Future Plans
+
+I’m actively working on improving CodeYatra and planning to add:
+
+* 📚 Add content for more sections:
+  * HTML, CSS, JavaScript, React, Java, Spring Boot
+* ⚡ Expand cheatsheets:
+  * Cheatsheets for HTML, JS, React, Java, and more
+* 🧠 Logical Building Section:
+  * Beginner to advanced logical problems
+  * Pattern-based questions
+  * Output-based questions
+* 📊 Progress tracking system
+  * Track completed topics
+  * Resume learning anytime
+* 🧪 DSA Practice Section:
+  * Basic to intermediate DSA questions
+  * Interview-focused problems
+
+---
+
+## 🤝 Contributing
+
+If you have ideas or improvements:
+
+* Fork the repo
+* Make changes
+* Submit a PR
+
+Let’s build something awesome together 💙
+
+---
+
+## ⭐ Support
+
+If you found this helpful:
+
+👉 Give it a star ⭐
+👉 Share it with others
+
+---
+
+## 👨‍💻 Author
+
+**Vishal Shukla**
+
+* 💻 Aspiring Full Stack Developer
+* 🚀 Building projects to learn & grow
+
+---
+
+## 💬 Final Note
+
+This project is part of my journey to become a **Full Stack Developer**.
+
+> 🚀 Goal: Make CodeYatra a complete platform for learning + practice + revision in one place.
