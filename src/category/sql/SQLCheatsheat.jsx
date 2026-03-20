@@ -1,5 +1,6 @@
 import React from 'react'
-import useFetch from '../hooks/useFetch'
+import useFetch from '../../hooks/useFetch';
+
 
 export default function SQLCheatsheat() {
     let { data } = useFetch("https://dummyjson.com/c/3110-b46a-48c3-9f05")

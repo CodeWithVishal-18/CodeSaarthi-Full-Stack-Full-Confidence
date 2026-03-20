@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { ThemeContext } from '../hooks/ThemeContext'
+import { ThemeContext } from '../../hooks/ThemeContext'
 
 export default function CommandCard({ title, description, mysql }) {
     let { theme } = useContext(ThemeContext)
