@@ -14,6 +14,7 @@ import ThemeProvider from './hooks/ThemeContext.js';
 import HTML from './category/html/HTML.jsx';
 import JavaScript from './category/javascript/JavaScript.jsx';
 import WorkingWindow from './WorkingWindow.jsx';
+import LogicBuilding from './category/logicBuilding/LogicBuilding.jsx';
 
 let routes = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ let routes = createBrowserRouter([
       { path: "javascript", element: <JavaScript /> },
       { path: "sql", element: <SQL /> },
       { path: "sqlcheatsheet", element: <SQLCheatsheat /> },
+      { path: "logic_building", element: <LogicBuilding /> },
       { path: "sorryy", element: <WorkingWindow /> },
       { path: "*", element: <Navigate to="/" replace /> }
     ]
