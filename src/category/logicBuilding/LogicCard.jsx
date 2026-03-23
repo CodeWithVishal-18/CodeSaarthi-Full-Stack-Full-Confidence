@@ -15,13 +15,17 @@ export default function LogicCard({ problem }) {
         } else {
             alert("Wrong answer! Try again.");
         }
-    };
+    }
+    let copyCode = (code) => {
+        navigator.clipboard.writeText(code)
+        alert("Command copied!")
+    }
 
     return (
         <div className={`card mb-4 shadow-sm border-0 ${theme === "dark" ? "bg-dark text-light" : "bg-white text-dark"}`}>
             <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center" onClick={() => setOpen(!open)} style={{ cursor: "pointer" }} >
-                    <h5 className="fw-bold mb-0">{problem?.id}. {problem?.title}</h5>
+                    <h5 className="fw-bold mb-0">Q. {problem?.title}</h5>
                     <div>
                         {problem?.difficulty && (
                             <span className={`badge me-2 ${problem.difficulty === "Easy" ? "bg-success" : problem.difficulty === "Medium" ? "bg-warning text-dark" : "bg-danger"}`}> {problem.difficulty} </span>
@@ -84,13 +88,19 @@ export default function LogicCard({ problem }) {
                             </div>
                         )}
                         {showSolution && (
-                            <div className={`mt-3 p-3 rounded ${theme === "dark" ? "bg-black" : "bg-light border"}`}>
-                                <h6 className="fw-semibold">💡 Solution</h6>
-
-                                <pre className="mb-0 overflow-auto">
-                                    <code>{problem?.solution}</code>
-                                </pre>
-                            </div>
+                            <>
+                                <div className={`mt-3 p-3 rounded ${theme === "dark" ? "bg-black" : "bg-light border"}`}>
+                                    <h6 className="fw-semibold"><i className="bi bi-star-fill text-info"></i> Solution</h6>
+                                    <div className={`d-flex justify-content-between align-items-start ${theme === "dark" ? "bg-black" : "bg-light"}`}>
+                                        <pre className={`mb-0 overflow-auto ${theme === "dark" ? "text-warning" : "fw-semibold text-danger"}`}>
+                                            <code>{problem?.solution}</code>
+                                        </pre>
+                                        <button className={`btn btn-sm ${theme==="dark"?"btn-outline-light":"btn-outline-dark"} border-0 ms-3`} onClick={() => copyCode(problem.solution)}>
+                                            <i className="bi bi-clipboard"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </>
                         )}
                     </>
                 )}

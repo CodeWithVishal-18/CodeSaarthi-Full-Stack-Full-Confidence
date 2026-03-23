@@ -11,7 +11,6 @@ export default function FrontendContent({ data }) {
     }, [data]);
 
     let [copiedIndex, setCopiedIndex] = useState(null);
-
     let copyCode = (code, index) => {
         navigator.clipboard.writeText(code);
         setCopiedIndex(index);

@@ -14,7 +14,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["0 <= age <= 120"],
 
-        "solution": "if(age >= 18){ System.out.println(\"Eligible\"); } else { System.out.println(\"Not Eligible\"); }",
+        "solution": "if(age >= 18)\n{ \n    System.out.println(\"Eligible\"); \n} else { \n    System.out.println(\"Not Eligible\"); \n}",
 
         "unlockQuestion": {
             "question": "What is minimum voting age?",
@@ -37,7 +37,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["-10^9 <= n <= 10^9"],
 
-        "solution": "if(num % 2 == 0){ System.out.println(\"Even\"); } else { System.out.println(\"Odd\"); }",
+        "solution": "if(num % 2 == 0)\n{ \n    System.out.println(\"Even\"); \n} else { \n    System.out.println(\"Odd\"); \n}",
 
         "unlockQuestion": {
             "question": "Which operator is used to check remainder?",
@@ -60,7 +60,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["-10^9 <= a, b <= 10^9"],
 
-        "solution": "if(a > b){ System.out.println(a); } else { System.out.println(b); }",
+        "solution": "if(a > b)\n{ \n    System.out.println(a); \n} else { \n    System.out.println(b); \n}",
 
         "unlockQuestion": {
             "question": "Which operator is used for comparison?",
@@ -83,7 +83,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["-10^9 <= a, b, c <= 10^9"],
 
-        "solution": "if(a > b && a > c){ System.out.println(a); } else if(b > c){ System.out.println(b); } else { System.out.println(c); }",
+        "solution": "if(a > b && a > c)\n{ \n   System.out.println(a); \n} else if(b > c){ \n   System.out.println(b); \n} else { \n   System.out.println(c); \n}",
 
         "unlockQuestion": {
             "question": "Which operator is used for AND condition?",
@@ -106,7 +106,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["1000 <= year <= 9999"],
 
-        "solution": "if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){ System.out.println(\"Leap Year\"); } else { System.out.println(\"Not Leap Year\"); }",
+        "solution": "if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)\n{ \n    System.out.println(\"Leap Year\"); \n} else { \n    System.out.println(\"Not Leap Year\"); }",
 
         "unlockQuestion": {
             "question": "Leap year is divisible by?",
@@ -122,14 +122,14 @@ export let logicBuildingData = [
         "description": "Assign grade based on marks.",
 
         "input": "An integer marks",
-        "output": "Print grade (A, B, C, Fail)",
+        "output": "Print grade (A, B, C, Fail), Marks Above 90 shows Grade A, Marks between 75 and 90 shows Grade B, Marks between 75 and 89 shows Grade B, Marks between 50 and 74 shows Grade B and Marks Less than 50 shoulb be Fail",
         "examples": [
             { "input": "85", "output": "B" },
             { "input": "45", "output": "Fail" }
         ],
         "constraints": ["0 <= marks <= 100"],
 
-        "solution": "if(marks >= 90){ System.out.println(\"A\"); } else if(marks >= 75){ System.out.println(\"B\"); } else if(marks >= 50){ System.out.println(\"C\"); } else { System.out.println(\"Fail\"); }",
+        "solution": "if(marks >= 90)\n{ \n  System.out.println(\"A\"); \n} else if(marks >= 75){ \n  System.out.println(\"B\"); \n} else if(marks >= 50){ \n  System.out.println(\"C\"); \n} else { \n  System.out.println(\"Fail\"); \n}",
 
         "unlockQuestion": {
             "question": "Which keyword is used for multiple conditions?",
@@ -152,7 +152,7 @@ export let logicBuildingData = [
         ],
         "constraints": ["-10^9 <= n <= 10^9"],
 
-        "solution": "if(num > 0){ System.out.println(\"Positive\"); } else if(num < 0){ System.out.println(\"Negative\"); } else { System.out.println(\"Zero\"); }",
+        "solution": "if(num > 0)\n{ \n  System.out.println(\"Positive\"); \n} else if(num < 0){ \n  System.out.println(\"Negative\"); \n} else { \n  System.out.println(\"Zero\"); \n}",
 
         "unlockQuestion": {
             "question": "Which value is neither positive nor negative?",
@@ -175,12 +175,201 @@ export let logicBuildingData = [
         ],
         "constraints": ["0 <= amount <= 10^7"],
 
-        "solution": "if(amount > 5000){ System.out.println(\"20%\"); } else if(amount >= 2000){ System.out.println(\"10%\"); } else { System.out.println(\"0%\"); }",
+        "solution": "if(amount > 5000)\n{ \n  System.out.println(\"20%\"); \n} else if(amount >= 2000){ \n  System.out.println(\"10%\"); \n} else { \n  System.out.println(\"0%\"); \n}",
 
         "unlockQuestion": {
             "question": "Which condition checks range?",
             "options": ["&&", "||", "="],
             "answer": "&&"
+        }
+    },
+    {
+        "id": 9,
+        "title": "Print Numbers from 1 to N",
+        "difficulty": "Easy",
+        "category": "loops",
+        "description": "Given a number N, print numbers from 1 to N.",
+
+        "input": "An integer N",
+        "output": "Print numbers from 1 to N",
+        "examples": [
+            { "input": "5", "output": "1 2 3 4 5" }
+        ],
+        "constraints": ["1 <= N <= 10^5"],
+
+        "solution": `for(int i = 1; i <= N; i++) {
+    System.out.print(i + " ");
+}`,
+
+        "unlockQuestion": {
+            "question": "Which loop is best when number of iterations is known?",
+            "options": ["for", "while", "do-while"],
+            "answer": "for"
+        }
+    },
+    {
+        "id": 10,
+        "title": "Calculate Sum of First N Natural Numbers",
+        "difficulty": "Easy",
+        "category": "loops",
+        "description": "Given a number N, calculate the sum of first N natural numbers.",
+
+        "input": "An integer N",
+        "output": "Print sum",
+        "examples": [
+            { "input": "5", "output": "15" }
+        ],
+        "constraints": ["1 <= N <= 10^6"],
+
+        "solution": `int sum = 0;
+for(int i = 1; i <= N; i++) {
+    sum += i;
+}
+System.out.println(sum);`,
+
+        "unlockQuestion": {
+            "question": "What does += do?",
+            "options": ["Add and assign", "Multiply", "Compare"],
+            "answer": "Add and assign"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Generate Multiplication Table",
+        "difficulty": "Easy",
+        "category": "loops",
+        "description": "Given a number N, print its multiplication table up to 10.",
+
+        "input": "An integer N",
+        "output": "Multiplication table",
+        "examples": [
+            { "input": "2", "output": "2 4 6 8 10 12 14 16 18 20" }
+        ],
+        "constraints": ["1 <= N <= 100"],
+
+        "solution": `for(int i = 1; i <= 10; i++) {
+    System.out.println(N + " * " + i + " = " + (N * i));
+}`,
+
+        "unlockQuestion": {
+            "question": "Loop runs how many times here?",
+            "options": ["5", "10", "Infinite"],
+            "answer": "10"
+        }
+    },
+    {
+        "id": 12,
+        "title": "Find Factorial of a Number",
+        "difficulty": "Easy",
+        "category": "loops",
+        "description": "Given a number N, find its factorial.",
+
+        "input": "An integer N",
+        "output": "Print factorial",
+        "examples": [
+            { "input": "5", "output": "120" }
+        ],
+        "constraints": ["1 <= N <= 20"],
+
+        "solution": `int fact = 1;
+for(int i = 1; i <= N; i++) {
+    fact *= i;
+}
+System.out.println(fact);`,
+
+        "unlockQuestion": {
+            "question": "Factorial of 0 is?",
+            "options": ["0", "1", "Undefined"],
+            "answer": "1"
+        }
+    },
+    {
+        "id": 13,
+        "title": "Count Digits in a Number",
+        "difficulty": "Easy",
+        "category": "loops",
+        "description": "Given a number, count how many digits it contains.",
+
+        "input": "An integer N",
+        "output": "Print number of digits",
+        "examples": [
+            { "input": "12345", "output": "5" }
+        ],
+        "constraints": ["1 <= N <= 10^9"],
+
+        "solution": `int count = 0;
+while(N > 0) {
+    N = N / 10;
+    count++;
+}
+System.out.println(count);`,
+
+        "unlockQuestion": {
+            "question": "Which operator removes last digit?",
+            "options": ["/", "%", "*"],
+            "answer": "/"
+        }
+    },
+    {
+        "id": 14,
+        "title": "Reverse a Number",
+        "difficulty": "Medium",
+        "category": "loops",
+        "description": "Given a number, reverse it.",
+
+        "input": "An integer N",
+        "output": "Print reversed number",
+        "examples": [
+            { "input": "123", "output": "321" }
+        ],
+        "constraints": ["1 <= N <= 10^9"],
+
+        "solution": `int rev = 0;
+while(N > 0) {
+    int digit = N % 10;
+    rev = rev * 10 + digit;
+    N = N / 10;
+}
+System.out.println(rev);`,
+
+        "unlockQuestion": {
+            "question": "Which operator gives last digit?",
+            "options": ["%", "/", "*"],
+            "answer": "%"
+        }
+    },
+    {
+        "id": 15,
+        "title": "Check Whether a Number is Prime",
+        "difficulty": "Medium",
+        "category": "loops",
+        "description": "Determine whether a number is prime or not.",
+
+        "input": "An integer N",
+        "output": "Print 'Prime' or 'Not Prime'",
+        "examples": [
+            { "input": "7", "output": "Prime" },
+            { "input": "8", "output": "Not Prime" }
+        ],
+        "constraints": ["1 <= N <= 10^6"],
+
+        "solution": `boolean isPrime = true;
+for(int i = 2; i < N; i++) {
+    if(N % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+if(isPrime && N > 1) {
+    System.out.println("Prime");
+} else {
+    System.out.println("Not Prime");
+}`,
+
+        "unlockQuestion": {
+            "question": "Prime numbers are divisible by?",
+            "options": ["1 and itself", "All numbers", "Even numbers"],
+            "answer": "1 and itself"
         }
     }
 ]
