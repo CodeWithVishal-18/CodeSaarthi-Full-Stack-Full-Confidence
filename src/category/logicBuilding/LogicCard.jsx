@@ -24,18 +24,20 @@ export default function LogicCard({ problem }) {
     return (
         <div className={`card mb-4 shadow-sm border-0 ${theme === "dark" ? "bg-dark text-light" : "bg-white text-dark"}`}>
             <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center" onClick={() => setOpen(!open)} style={{ cursor: "pointer" }} >
-                    <h5 className="fw-bold mb-0">Q. {problem?.title}</h5>
-                    <div>
-                        {problem?.difficulty && (
-                            <span className={`badge me-2 ${problem.difficulty === "Easy" ? "bg-success" : problem.difficulty === "Medium" ? "bg-warning text-dark" : "bg-danger"}`}> {problem.difficulty} </span>
-                        )}
-                        {problem?.category && (
-                            <span className="badge bg-primary">{problem.category}</span>
-                        )}
+                <div onClick={() => setOpen(!open)} style={{ cursor: "pointer" }}>
+                    <div className="d-flex justify-content-between align-items-center" >
+                        <h5 className="fw-bold mb-0">Q. {problem?.title}</h5>
+                        <div>
+                            {problem?.difficulty && (
+                                <span className={`badge me-2 ${problem.difficulty === "Easy" ? "bg-success" : problem.difficulty === "Medium" ? "bg-warning text-dark" : "bg-danger"}`}> {problem.difficulty} </span>
+                            )}
+                            {problem?.category && (
+                                <span className="badge bg-primary">{problem.category}</span>
+                            )}
+                        </div>
                     </div>
+                    <p className="text-secondary mt-2">{problem?.description}</p>
                 </div>
-                <p className="text-secondary mt-2">{problem?.description}</p>
                 {open && (
                     <>
                         <div className="mb-3">
@@ -95,7 +97,7 @@ export default function LogicCard({ problem }) {
                                         <pre className={`mb-0 overflow-auto ${theme === "dark" ? "text-warning" : "fw-semibold text-danger"}`}>
                                             <code>{problem?.solution}</code>
                                         </pre>
-                                        <button className={`btn btn-sm ${theme==="dark"?"btn-outline-light":"btn-outline-dark"} border-0 ms-3`} onClick={() => copyCode(problem.solution)}>
+                                        <button className={`btn btn-sm ${theme === "dark" ? "btn-outline-light" : "btn-outline-dark"} border-0 ms-3`} onClick={() => copyCode(problem.solution)}>
                                             <i className="bi bi-clipboard"></i>
                                         </button>
                                     </div>
