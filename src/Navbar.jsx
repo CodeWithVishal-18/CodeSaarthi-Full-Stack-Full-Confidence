@@ -17,9 +17,6 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to={"/"}>Home</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to={"/sql"}>SQL</Link>
-                            </li>
                         </ul>
                         <span style={{ cursor: "pointer" }} onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className='me-5'>
                             {theme === "dark" ? (
