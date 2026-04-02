@@ -10,7 +10,7 @@ export default function App() {
     <>
       <div className={`d-flex flex-column min-vh-100 ${theme === "dark" ? "bg-dark text-light min-vh-100" : "bg-light text-dark min-vh-100"}`}>
         <Navbar />
-        <div className="container flex-grow-1">
+        <div className="container flex-grow-1 mt-5">
           <Outlet />
         </div>
         <Footer />

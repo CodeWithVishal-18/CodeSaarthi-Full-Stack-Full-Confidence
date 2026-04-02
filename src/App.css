@@ -105,3 +105,42 @@ button:hover {
 .progress-step:hover {
   transform: scale(1.05);
 }
+
+.dropdown-toggle-box {
+  height: 45px;
+  border-radius: 10px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bs-body-bg);
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.dropdown-menu-box {
+  margin-top: 5px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 250px;
+  background: var(--bs-body-bg);
+  border: 1px solid #ddd;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dropdown-menu-box::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-item-box {
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown-item-box.active {
+  background: #0d6efd;
+  color: white;
+}

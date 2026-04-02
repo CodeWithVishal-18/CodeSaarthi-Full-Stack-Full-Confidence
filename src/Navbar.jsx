@@ -6,7 +6,7 @@ export default function Navbar() {
     let { theme, setTheme } = useContext(ThemeContext)
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-secondary-subtle">
+            <nav className="navbar navbar-expand-lg bg-secondary-subtle fixed-top">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to={"/"}><span className='codeColorLogo'>Code</span><span className='saarthiColorLogo'>Saarthi</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
