@@ -478,5 +478,41 @@ if(isPrime && N > 1) {
             "options": ["Column number", "Row number", "Random number"],
             "answer": "Row number"
         }
+    },
+    {
+        "id": 19,
+        "title": "Inverted Right-Angled Triangle Star Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print an inverted right-angled triangle pattern using '*' where the number of stars decreases in each row.",
+
+        "input": "An integer num",
+        "output": "Print star pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `* * * * *
+* * * *
+* * *
+* *
+*`
+            }
+        ],
+        "constraints": ["1 <= num <= 50"],
+
+        "solution": `static void printPattern(int num){
+    for (int i = num; i > 0; i--) {
+        for(int j = 1; j <= i; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What happens to number of stars in each row?",
+            "options": ["Increases", "Decreases", "Remains same"],
+            "answer": "Decreases"
+        }
     }
 ]
