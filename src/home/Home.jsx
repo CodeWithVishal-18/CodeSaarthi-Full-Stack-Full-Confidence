@@ -35,6 +35,17 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="col-12 col-md-6 col-lg-3 mb-2">
+          <div className="card h-100 shadow-sm" style={{ cursor: "pointer" }} onClick={() => navigate("/teachers")}>
+            <div className="card-body">
+              <div className="d-flex justify-content-between">
+                <h5>Teacher’s Specific Notes</h5>
+                <span className="text-success">Active</span>
+              </div>
+              <p className="text-secondary">This section contains special notes shared by expert teachers. These notes are helpful for understanding important topics and preparing for interviews.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div >
   )
