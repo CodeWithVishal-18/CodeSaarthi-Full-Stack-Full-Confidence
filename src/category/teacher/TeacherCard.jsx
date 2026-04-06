@@ -1,9 +1,7 @@
 import React from "react";
 import "./Teacher.css"
-import { useNavigate } from "react-router-dom";
 
 export default function TeacherCard() {
-  let navigate = useNavigate();
   let teachers = [
     {
       name: "Tejas Kasare",
