@@ -514,5 +514,41 @@ if(isPrime && N > 1) {
             "options": ["Increases", "Decreases", "Remains same"],
             "answer": "Decreases"
         }
+    },
+    {
+        "id": 20,
+        "title": "Inverted Incremental Number Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print an inverted triangle pattern where each row contains numbers starting from 1 up to the decreasing row length.",
+
+        "input": "An integer num",
+        "output": "Print number pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1`
+            }
+        ],
+        "constraints": ["1 <= num <= 50"],
+
+        "solution": `static void printPattern(int num) {
+    for (int i = num; i > 0; i--) {
+        for (int j = 1; j <= i; j++) {
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What happens to numbers in each row?",
+            "options": ["Increase", "Decrease", "Remain same"],
+            "answer": "Decrease"
+        }
     }
 ]
