@@ -19,7 +19,7 @@ export default function TeacherCard() {
       <div className="container py-4 mt-2">
         <div className="row g-4">
           {teachers.map((t, i) => (
-            <a href={t.notesUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
+            <a href={t.notesUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", cursor:"pointer"}}>
               <div key={i} className="col-12 col-md-6 col-lg-3">
                 <div className="teacher-card">
                   <div className="teacher-inner border border-1">
