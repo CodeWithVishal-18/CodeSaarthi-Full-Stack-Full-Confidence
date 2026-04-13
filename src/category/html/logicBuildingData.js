@@ -628,5 +628,58 @@ if(isPrime && N > 1) {
             "options": ["Increases", "Decreases", "Remain same"],
             "answer": "Decreases"
         }
+    },
+    {
+        "id": 23,
+        "title": "Diamond Star Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a diamond pattern using '*' by combining a centered pyramid and an inverted pyramid.",
+
+        "input": "An integer x",
+        "output": "Print diamond pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= x - i; j++){
+            System.out.print(" ");
+        }
+        for(int k = 1; k <= 2 * i - 1; k++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    for(int i = x; i > 0; i--){
+        for(int j = 1; j <= x - i; j++){
+            System.out.print(" ");
+        }
+        for(int k = 1; k <= 2 * i - 1; k++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Diamond pattern is combination of?",
+            "options": ["Two triangles", "Pyramid and Inverted Pyramid", "Square and Triangle"],
+            "answer": "Pyramid and Inverted Pyramid"
+        }
     }
 ]
