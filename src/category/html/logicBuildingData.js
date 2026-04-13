@@ -631,6 +631,52 @@ if(isPrime && N > 1) {
     },
     {
         "id": 23,
+        "title": "Simple Diamond Star Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a simple diamond pattern using '*' without spaces by combining an increasing and decreasing triangle.",
+
+        "input": "An integer x",
+        "output": "Print diamond pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `*
+**
+***
+****
+*****
+****
+***
+**
+*`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    for(int i = x - 1; i > 0; i--){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Why do we use (x - 1) in second loop?",
+            "options": ["To avoid duplicate middle row", "To increase stars", "To add spaces"],
+            "answer": "To avoid duplicate middle row"
+        }
+    },
+    {
+        "id": 24,
         "title": "Diamond Star Pattern",
         "difficulty": "Medium",
         "category": "pattern",
