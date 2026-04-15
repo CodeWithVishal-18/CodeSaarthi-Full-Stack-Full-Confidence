@@ -770,5 +770,47 @@ if(isPrime && N > 1) {
             "options": ["Stops loop", "Alternates between 0 and 1", "Adds numbers"],
             "answer": "Alternates between 0 and 1"
         }
+    },
+    {
+        "id": 26,
+        "title": "Palindrome Number Pyramid Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a symmetric number pyramid where numbers increase from 1 to i, followed by spaces, and then decrease back to 1 forming a palindrome-like pattern.",
+
+        "input": "An integer x",
+        "output": "Print number pyramid pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1        1
+12      21
+123    321
+1234  4321
+1234554321`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print(j);
+        }
+        for(int k = 1; k <= 2 * x - 2 * i; k++){
+            System.out.print(" ");
+        }
+        for(int j = i; j > 0; j--){
+            System.out.print(j);
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Why are spaces used in this pattern?",
+            "options": ["To increase numbers", "To maintain symmetry", "To stop loop"],
+            "answer": "To maintain symmetry"
+        }
     }
 ]
