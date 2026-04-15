@@ -727,5 +727,48 @@ if(isPrime && N > 1) {
             "options": ["Two triangles", "Pyramid and Inverted Pyramid", "Square and Triangle"],
             "answer": "Pyramid and Inverted Pyramid"
         }
+    },
+    {
+        "id": 25,
+        "title": "Binary Alternating Triangle Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a triangle pattern of 0s and 1s where each row alternates values and the starting value changes based on whether the row is even or odd.",
+
+        "input": "An integer num",
+        "output": "Print binary pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1`
+            }
+        ],
+        "constraints": ["1 <= num <= 50"],
+
+        "solution": `static void printPattern(int num){
+    for(int i = 1; i <= num; i++){
+        int start = 1;
+
+        if(i % 2 == 0){
+            start = 0;
+        }
+
+        for(int j = 1; j <= i; j++){
+            System.out.print(start + " ");
+            start = 1 - start;
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What does (start = 1 - start) do?",
+            "options": ["Stops loop", "Alternates between 0 and 1", "Adds numbers"],
+            "answer": "Alternates between 0 and 1"
+        }
     }
 ]
