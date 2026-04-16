@@ -812,5 +812,44 @@ if(isPrime && N > 1) {
             "options": ["To increase numbers", "To maintain symmetry", "To stop loop"],
             "answer": "To maintain symmetry"
         }
+    },
+    {
+        "id": 27,
+        "title": "Continuous Number Triangle Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a triangle pattern where numbers increase continuously across rows instead of restarting from 1 in each row.",
+
+        "input": "An integer x",
+        "output": "Print number pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    int count = 1;
+
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print(count + " ");
+            count++;
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Why is 'count' declared outside the loop?",
+            "options": ["To reset every row", "To continue numbering across rows", "To stop loop"],
+            "answer": "To continue numbering across rows"
+        }
     }
 ]
