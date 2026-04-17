@@ -923,5 +923,64 @@ A`
             "options": ["Increase", "Decrease", "Remain same"],
             "answer": "Decrease"
         }
+    },
+    {
+        "id": 30,
+        "title": "Butterfly Star Pattern",
+        "difficulty": "Hard",
+        "category": "pattern",
+        "description": "Print a butterfly pattern using '*' where stars expand and contract symmetrically with spaces in between.",
+
+        "input": "An integer x",
+        "output": "Print butterfly pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = x; i > 0; i--){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        for(int m = 1; m <= 2 * x - 2 * i; m++){
+            System.out.print(" ");
+        }
+        for(int k = i; k > 0; k--){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        for(int m = 1; m <= 2 * x - 2 * i; m++){
+            System.out.print(" ");
+        }
+        for(int k = i; k > 0; k--){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Butterfly pattern is combination of?",
+            "options": ["Two triangles", "Mirror triangles with spaces", "Only pyramid"],
+            "answer": "Mirror triangles with spaces"
+        }
     }
 ]
