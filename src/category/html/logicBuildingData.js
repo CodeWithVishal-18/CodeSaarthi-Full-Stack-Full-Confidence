@@ -887,5 +887,41 @@ A B C D E`
             "options": ["Number addition", "Next alphabet using ASCII", "Loop break"],
             "answer": "Next alphabet using ASCII"
         }
+    },
+    {
+        "id": 29,
+        "title": "Inverted Alphabet Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print an inverted triangle pattern where each row contains alphabets starting from 'A' and decreasing in length each row.",
+
+        "input": "An integer x",
+        "output": "Print alphabet pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `ABCDE
+ABCD
+ABC
+AB
+A`
+            }
+        ],
+        "constraints": ["1 <= x <= 26"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = x - 1; i >= 0; i--){
+        for(char ch = 'A'; ch <= 'A' + i; ch++){
+            System.out.print(ch);
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What happens to number of characters in each row?",
+            "options": ["Increase", "Decrease", "Remain same"],
+            "answer": "Decrease"
+        }
     }
 ]
