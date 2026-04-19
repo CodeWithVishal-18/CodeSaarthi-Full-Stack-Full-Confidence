@@ -1040,5 +1040,51 @@ A`
             "options": ["j loop", "k loop", "i loop"],
             "answer": "k loop"
         }
+    },
+    {
+        "id": 32,
+        "title": "Hollow Square Star Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a hollow square pattern using '*' where only the boundary elements are stars and the inner area is filled with spaces.",
+
+        "input": "An integer x",
+        "output": "Print hollow square pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `* * * * *
+*       *
+*       *
+*       *
+* * * * *`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        if(i == 1 || i == x){
+            for(int j = 1; j <= x; j++){
+                System.out.print("* ");
+            }
+        } else {
+            for(int j = 1; j <= x; j++){
+                if(j == 1 || j == x){
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Which condition checks boundary?",
+            "options": ["i == 1 || i == x", "i % 2 == 0", "j < i"],
+            "answer": "i == 1 || i == x"
+        }
     }
 ]
