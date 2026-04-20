@@ -1133,5 +1133,41 @@ A`
             "options": ["Maximum value", "Distance from boundary", "Loop count"],
             "answer": "Distance from boundary"
         }
+    },
+    {
+        "id": 34,
+        "title": "Row-Wise Constant Alphabet Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a triangle pattern where each row contains the same alphabet, increasing with each row starting from 'A'.",
+
+        "input": "An integer x",
+        "output": "Print alphabet pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `A
+BB
+CCC
+DDDD
+EEEEE`
+            }
+        ],
+        "constraints": ["1 <= x <= 26"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 0; i <= x - 1; i++){
+        for(int j = 0; j <= i; j++){
+            System.out.print((char)('A' + i));
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What does ('A' + i) represent?",
+            "options": ["Next alphabet", "Loop counter", "Random value"],
+            "answer": "Next alphabet"
+        }
     }
 ]
