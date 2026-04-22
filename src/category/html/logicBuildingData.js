@@ -1168,5 +1168,45 @@ DDDD`
             "options": ["Next alphabet", "Loop counter", "Random value"],
             "answer": "Next alphabet"
         }
+    },
+    {
+        "id": 35,
+        "title": "Pascal's Triangle Pattern",
+        "difficulty": "Hard",
+        "category": "pattern",
+        "description": "Print Pascal's Triangle where each number is the sum of the two numbers directly above it.",
+
+        "input": "An integer x",
+        "output": "Print Pascal triangle",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1`
+            }
+        ],
+        "constraints": ["1 <= x <= 20"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 0; i < x; i++){
+        int num = 1;
+
+        for(int j = 0; j <= i; j++){
+            System.out.print(num + " ");
+            num = num * (i - j) / (j + 1);
+        }
+
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Each element in Pascal's triangle is sum of?",
+            "options": ["Previous row elements", "Left and right above elements", "All numbers in row"],
+            "answer": "Left and right above elements"
+        }
     }
 ]
