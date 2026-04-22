@@ -1171,6 +1171,49 @@ DDDD`
     },
     {
         "id": 35,
+        "title": "Palindrome Alphabet Triangle Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a triangle pattern where alphabets form a palindrome in each row, increasing from 'A' to a peak character and then decreasing back to 'A'.",
+
+        "input": "An integer x",
+        "output": "Print palindrome alphabet pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `A
+ABA
+ABCBA
+ABCDCBA
+ABCDEDCBA`
+            }
+        ],
+        "constraints": ["1 <= x <= 26"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 0; i < x; i++){
+        // increasing part
+        for(char ch = 'A'; ch <= 'A' + i; ch++){
+            System.out.print(ch);
+        }
+
+        // decreasing part
+        for(char ch = (char)('A' + i - 1); ch >= 'A'; ch--){
+            System.out.print(ch);
+        }
+
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Why do we start decreasing loop from (i - 1)?",
+            "options": ["To avoid duplicate middle character", "To increase speed", "To skip loop"],
+            "answer": "To avoid duplicate middle character"
+        }
+    },
+    {
+        "id": 36,
         "title": "Pascal's Triangle Pattern",
         "difficulty": "Hard",
         "category": "pattern",
