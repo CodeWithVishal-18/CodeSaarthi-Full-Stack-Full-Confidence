@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import SideBar from '../SideBar'
 import FrontendContent from '../FrontendContent'
 import { javaScript } from './javaScript'
 
-export default function JavaScript() {
+let JavaScript=memo(() => {
   let topics = [
     { key: "intro", label: "Introduction" },
     { key: "variables", label: "Variables & Data Types" },
@@ -51,4 +51,6 @@ export default function JavaScript() {
       </div>
     </div>
   )
-}
+})
+
+export default JavaScript;
