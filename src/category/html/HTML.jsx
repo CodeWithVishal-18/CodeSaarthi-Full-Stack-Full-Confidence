@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import SideBar from '../SideBar'
 import FrontendContent from '../FrontendContent'
 import { htmlCourse } from './htmlData'
 
-export default function HTML() {
+let HTML = memo(() => {
     let topics = [
         { key: "intro", label: "Introduction" },
         { key: "structure", label: "Basic Structure" },
@@ -41,4 +41,6 @@ export default function HTML() {
             </div>
         </div>
     )
-}
+})
+
+export default HTML;
