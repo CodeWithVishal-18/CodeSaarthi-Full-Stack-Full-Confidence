@@ -3,7 +3,7 @@ import SideBar from '../SideBar'
 import FrontendContent from '../FrontendContent'
 import { sqlData } from './sqlData'
 
-let SQL=memo(() => {
+let SQL = memo(() => {
     let topics = [
         { key: "intro", label: "Introduction" },
         { key: "database", label: "Database Basics" },
@@ -29,7 +29,7 @@ let SQL=memo(() => {
         <div className="row mt-4">
             <div className="col-lg-3 mb-3">
                 <div className="position-sticky top-0">
-                    <h5 className="mb-3"><i className="bi bi-filetype-sql" style={{color:"orange"}}></i> SQL Topics</h5>
+                    <h5 className="mb-3"><i className="bi bi-filetype-sql" style={{ color: "orange" }}></i> SQL Topics</h5>
                     <SideBar topics={topics} active={topics[activeIndex].key} onSelect={(key) => setActiveIndex(topics.findIndex(t => t.key === key))} />
                 </div>
             </div>

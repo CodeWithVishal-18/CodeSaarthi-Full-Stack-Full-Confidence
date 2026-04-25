@@ -1,6 +1,6 @@
-import React  from 'react'
+import React, { memo }  from 'react'
 
-export default function ProgressBar({ steps, activeStep, setActiveStep }) {
+let ProgressBar=memo(({ steps, activeStep, setActiveStep }) => {
     return (
         <div className="d-flex align-items-center justify-content-between mb-4 flex-wrap">
             <span className="text-light"><i className="bi bi-align-start"></i></span>
@@ -19,4 +19,6 @@ export default function ProgressBar({ steps, activeStep, setActiveStep }) {
             <span className="text-light"><i className="bi bi-align-end"></i></span>
         </div>
     )
-}
+})
+
+export default ProgressBar;
