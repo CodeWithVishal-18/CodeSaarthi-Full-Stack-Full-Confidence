@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { memo, useContext, useState } from 'react'
 import { ThemeContext } from '../../hooks/ThemeContext';
 
 let LogicCard = memo(({ problem }) => {
