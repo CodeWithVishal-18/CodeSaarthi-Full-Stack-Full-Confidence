@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
-export default function SideBar({ topics, active, onSelect }) {
+let SideBar = memo(({ topics, active, onSelect }) => {
     let [open, setOpen] = useState(false);
 
     let currentLabel = topics.find(t => t.key === active)?.label;
@@ -34,4 +34,6 @@ export default function SideBar({ topics, active, onSelect }) {
             </div>
         </>
     )
-}
+})
+
+export default SideBar;
