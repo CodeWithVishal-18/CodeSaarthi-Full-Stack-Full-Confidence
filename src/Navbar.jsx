@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React, { memo, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from './hooks/ThemeContext'
 
-export default function Navbar() {
+let Navbar=memo(()=> {
     let { theme, setTheme } = useContext(ThemeContext)
     return (
         <div>
@@ -30,4 +30,6 @@ export default function Navbar() {
             </nav>
         </div>
     )
-}
+})
+
+export default Navbar;
