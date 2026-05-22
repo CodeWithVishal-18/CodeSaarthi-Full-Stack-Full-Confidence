@@ -5,7 +5,7 @@ import { javaScript } from './javaScript'
 
 let JavaScript=memo(() => {
   let topics = [
-    { key: "intro", label: "Introduction" },
+    { key: "intro", label: "Introduction to JavaScript" },
     { key: "variables", label: "Variables & Data Types" },
     { key: "operators", label: "Operators" },
     { key: "typeConversion", label: "Type Conversion" },
