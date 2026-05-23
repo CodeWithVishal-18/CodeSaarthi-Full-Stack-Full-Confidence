@@ -35,7 +35,7 @@ let Home = memo(() => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-3 mb-2">
+        {/* <div className="col-12 col-md-6 col-lg-3 mb-2">
           <div className="card h-100 shadow-sm" style={{ cursor: "pointer" }} onClick={() => navigate("/teachers")}>
             <div className="card-body">
               <div className="d-flex justify-content-between">
@@ -45,7 +45,7 @@ let Home = memo(() => {
               <p className="text-secondary">This section contains special notes shared by expert teachers. These notes are helpful for understanding important topics and preparing for interviews.</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div >
   )
