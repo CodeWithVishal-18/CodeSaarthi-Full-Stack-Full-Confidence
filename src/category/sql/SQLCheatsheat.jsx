@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import useFetch from '../../hooks/useFetch';
 
 
-let SQLCheatsheat=memo(()=> {
+let SQLCheatsheat = memo(() => {
     let { data } = useFetch("https://dummyjson.com/c/3110-b46a-48c3-9f05")
     if (!data) {
         return <p className="text-center mt-4">Loading cheatsheet ...</p>;
@@ -31,7 +31,7 @@ let SQLCheatsheat=memo(()=> {
                                         <pre className="text-warning mb-0 mt-1 ms-3">
                                             <code>{item.syntax}</code>
                                         </pre>
-                                        <button className="btn btn-outline-light border-0 me-3" onClick={()=> copyCode(item.syntax)}><i className="bi bi-clipboard"></i></button>
+                                        <button className="btn btn-outline-light border-0 me-3" onClick={() => copyCode(item.syntax)}><i className="bi bi-clipboard"></i></button>
                                     </div>
                                 )}
                             </div>
