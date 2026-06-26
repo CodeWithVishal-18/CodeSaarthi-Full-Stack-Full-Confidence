@@ -17,7 +17,6 @@ let SQLCheatsheat = memo(() => {
             <p className="text-secondary mb-5">{data.description}</p>
             {data.sections.map((section, sectionIndex) => (
                 <section key={sectionIndex} className="mb-5">
-
                     <h3 className="mb-4 border-bottom pb-2">{section.section}</h3>
 
                     <div className="row">

@@ -12,9 +12,7 @@ let WorkingWindow = memo(() => {
                     </div>
 
                     <h2 className="fw-bold mb-3 text-warning">Good things take time</h2>
-                    <p className="mb-1">
-                        Check back soon to see what we’re building.
-                    </p>
+                    <p className="mb-1">Check back soon to see what we’re building.</p>
                     <p className="mb-4">
                         While we're building this feature, why not explore <a href="https://vishalshukla.vercel.app/" className='text-decoration-none fw-bold text-warning'>My Portfolio</a> or say hi on <a href="https://github.com/CodeWithVishal-18" target="_blank" rel="noopener noreferrer" className="fw-semibold text-decoration-none">
                             <i className="bi bi-linkedin me-1"></i>LinkedIn?
