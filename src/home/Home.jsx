@@ -7,10 +7,8 @@ let Home = memo(() => {
   let navigate = useNavigate()
   return (
     <div className="container py-5">
-
       <h2 className="mb-4" > <i className="bi bi-stack text-danger"></i> Full Stack Syllabus</h2>
       <div className="row"><SyllabusCard categoryArray={SyllabusData.categories} /></div>
-
       <h2 className="mt-5 mb-4"><i className="bi bi-lightning-charge-fill text-warning"></i> Cheatsheets & Interview Preparation</h2>
       <div className="row">
         <div className="col-12 col-md-6 col-lg-3 mb-2 ">
