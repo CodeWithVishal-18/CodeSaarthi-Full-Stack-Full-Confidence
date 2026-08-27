@@ -13,5 +13,4 @@ let Footer = memo(() => {
         </footer>
     )
 })
-
 export default Footer;
