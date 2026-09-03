@@ -47,7 +47,6 @@ button:hover {
   color: transparent;
   animation: shineGold 3s linear infinite;
 }
-
 @keyframes shineGold {
   0% {
     background-position: 0% center;
